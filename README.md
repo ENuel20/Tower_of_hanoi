@@ -1,7 +1,15 @@
 # Tower_of_hanoi
 
-A neat recursive Tower of Hanoi implementation in Python that prints the full
-solution for a 3-disk puzzle.
+# Tower of Hanoi (Recursive Demonstration)
+
+This implementation demonstrates recursion and state transitions using stacks.
+
+## Key Concepts
+- Recursion: Problem reduced from n → n-1
+- Base case: n == 0
+- State mutation: disk movement using stack operations
+
+
 
 ## Run
 
