@@ -20,13 +20,14 @@ def hanoi(n, source, target, auxiliary, rods):
     # If there are no disks to move, stop the recursion.
     if n == 0:
         return
-
+    # first recursive ection
     # Move n-1 disks from source to auxiliary using target as temporary storage.
     hanoi(n - 1, source, auxiliary, target, rods)
 
-    # Move the remaining largest disk to the target rod.
+    # actual move the remaining largest disk to the target rod.
     move_disk(rods, source, target)
 
+    # second recurive ection
     # Move the n-1 disks from auxiliary to target using source as temporary storage.
     hanoi(n - 1, auxiliary, target, source, rods)
 
